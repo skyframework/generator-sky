@@ -1,0 +1,32 @@
+{
+  "name": "generator-sky",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyframework/generator-sky.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skyframework/generator-sky/issues"
+  },
+  "homepage": "https://github.com/skyframework/generator-sky#readme",
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "yeoman-generator": "^5.6.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
