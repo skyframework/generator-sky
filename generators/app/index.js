@@ -17,6 +17,9 @@ module.exports = class extends Generator {
   }
 
   _writingServiceTemplate() {
-    this.fs.copy(this.templatePath("service"), this.destionationPath());
+    this.fs.copy(
+      this.templatePath("service"),
+      this.destinationPath(this.option.name)
+    );
   }
 };
